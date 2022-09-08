@@ -1,17 +1,9 @@
 import type { NextPage } from 'next'
-import Navigation from "../components/Navigation";
+import Hero from "../components/Hero";
 const Index: NextPage = () => {
   return (
     <>
-      <header>
-        <Navigation />
-      </header>
-      <main>
-
-      </main>
-      <footer>
-
-      </footer>
+      <Hero />
     </>
   )
 }
