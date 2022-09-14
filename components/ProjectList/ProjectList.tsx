@@ -25,17 +25,14 @@ const ProjectList = ({projects}: Props): JSX.Element => {
         </div>
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">From the blog</h2>
-            <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.
-            </p>
+            <h2 className="text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">Projects</h2>
           </div>
           <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-none lg:grid-cols-3">
             {projects.map((project) => (
               <div key={project.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
                 <div className="flex-shrink-0">
                   <div className="relative h-48 w-full object-cover">
-                    <Image src="/images/project-placeholder.png" alt="project picture" fill/>
+                    <Image src={ project.image != "" ? project.image : "/images/project-placeholder.png" } alt="project picture" fill/>
                   </div>
                 </div>
                 <div className="flex flex-1 flex-col justify-between bg-gray-900 p-6">

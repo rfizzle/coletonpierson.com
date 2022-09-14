@@ -7,7 +7,7 @@ import Image from "next/future/image";
 import alertRule1 from "../../snippets/alert-rule-1.json"
 import alertRule2 from "../../snippets/alert-rule-2.json"
 
-const IncidentResponseAlertingPipeline: NextPage = () => {
+const SecurityAlertAndEventPipeline: NextPage = () => {
   const alertStructs = require("!!raw-loader!../../snippets/alert-structs.go");
 
   return (
@@ -18,7 +18,16 @@ const IncidentResponseAlertingPipeline: NextPage = () => {
             <Link href="/projects?category=security">
               <h3 className="mx-auto cursor-pointer hover:underline">Security</h3>
             </Link>
-            <h1>Incident Response Alerting Pipeline</h1>
+            <h1>Security Alert and Event Pipeline</h1>
+            <figure>
+              <Image
+                className="w-full rounded-lg"
+                src="/images/alerting-pipeline.png"
+                alt="Alerting Pipeline"
+                width={ 5363 }
+                height={ 2138 }
+              />
+            </figure>
             <p>
               One of the most important aspects of a Security Operations and Incident Response team is the alerting
               pipeline. There is where you archive, filter, escalate, and action on security events and alerts sent out
@@ -173,4 +182,4 @@ const IncidentResponseAlertingPipeline: NextPage = () => {
   )
 }
 
-export default IncidentResponseAlertingPipeline;
+export default SecurityAlertAndEventPipeline;
