@@ -1,0 +1,9 @@
+{
+  "ignore_rules": [
+    {
+      "label": "Ignore Local Host",
+      "query": "has(alert.source_metadata) && has(alert.source_metadata.ip) && alert.source_metadata.ip == \"127.0.0.1\"",
+      "sirens": []
+    }
+  ]
+}

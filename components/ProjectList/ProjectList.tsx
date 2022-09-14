@@ -47,10 +47,12 @@ const ProjectList = ({projects}: Props): JSX.Element => {
                         </a>
                       </Link>
                     </p>
-                    <a href={project.href} className="mt-2 block">
-                      <p className="text-xl font-semibold text-gray-100">{project.title}</p>
-                      <p className="mt-3 text-base text-gray-500">{project.description}</p>
-                    </a>
+                    <Link href={project.href}>
+                      <a className="mt-2 block">
+                        <p className="text-xl font-semibold text-gray-100">{project.title}</p>
+                        <p className="mt-3 text-base text-gray-500">{project.description}</p>
+                      </a>
+                    </Link>
                   </div>
                 </div>
               </div>

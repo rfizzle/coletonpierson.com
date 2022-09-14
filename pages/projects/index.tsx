@@ -19,7 +19,7 @@ const projects: ProjectSummary[] = [
     title: "Incident Response Alerting Pipeline",
     description: "",
     image: "",
-    href: "",
+    href: "/projects/incident-response-alerting-pipeline",
     date: "2022-05-01",
     category: "security",
   }

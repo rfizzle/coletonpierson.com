@@ -4,7 +4,6 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <>
-      <div className="mx-auto max-w-7xl">
         <div className="lg:grid lg:grid-cols-12 lg:gap-8">
           <div className="px-4 sm:px-6 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:flex lg:items-center lg:text-left">
             <div>
@@ -59,7 +58,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   )
 }

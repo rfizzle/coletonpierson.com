@@ -1,0 +1,13 @@
+{
+  "label": "Virus Total Malicious Detection",
+  "query": "alert.enrichment.exists_one(i, (i.type == \"virusTotal\" && int(i.data.malicious) > 5))",
+  "sirens": [
+    {
+      "type": "http",
+      "params": {
+        "webhook": "https://example.com/webhook",
+        "parameters": {"example": "value"}
+      }
+    }
+  ]
+}
